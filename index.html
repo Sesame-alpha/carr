@@ -235,6 +235,47 @@
     </div> 
   </div> 
 </section> 
+  <sytle.css>
+  /* Grid Layout */
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    max-width: 1600px;
+    height: 300px;
+    margin: auto;
+}
+ 
+/* Image Cards */
+.image-item {
+    background: white;
+    border-radius: 15px;
+    padding: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+ 
+/* Hover Lift Effect */
+.image-item:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.12);
+}
+ 
+/* Images */
+.image-item img {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+ 
+/* Zoom inside card */
+.image-item img:hover {
+    transform: scale(1.05);
+}
+    </sytle.css>
       <footer class="bg-dark text-white text-center py-3"> 
   <div class="container"> 
     <p class="mb-0">© 2026 AutoMart. Built with Bootstrap 5.</p> 
